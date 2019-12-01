@@ -1,0 +1,82 @@
+.verpraaksaam {
+  background: url(../images/verpr-bg.png);
+  background-size: cover;
+  color: $text-dark;
+
+  &__header {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+  }
+
+  &__img {
+    display: inline-block;
+    &--right {
+      transform: scale(-1, 1);
+    }
+  }
+
+  &__title {
+    display: inline-block;
+    font-size: 42px;
+    font-family: $text-font;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 140px;
+  }
+}
+
+.block {
+  width: 25%;
+  margin-right: 10%;
+  @extend %text;
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &__title {
+    font-size: 34px;
+    font-weight: normal;
+    padding: 24px 0;
+    font-family: $text-font;
+  }
+
+  &__text {
+    @extend %text;
+    color: $text-dark;
+  }
+
+  &__btn {
+    font-size: 16px;
+    color: $text-dark;
+    margin-left: 40%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .verpraaksaam {
+    &__title {
+      font-size: 30px;
+    }
+
+    &__img {
+      display: none;
+    }
+
+    &__content {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+  }
+
+  .block {
+    width: 250px;
+    margin-right: 20px;
+    &__title {
+      font-size: 28px;
+    }
+  }
+}
