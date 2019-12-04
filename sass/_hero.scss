@@ -112,13 +112,13 @@
   }
 
   &__slide {
-    background: url(../images/hero-bg.png) no-repeat 50% 100%;
+    background: url(../images/hero-bg.jpg) no-repeat 50% 100%;
     background-size: cover;
     animation: fade 1s 1;
     height: 100%;
 
     &--second {
-      background: url(../images/slide2.png) no-repeat 50% 100%;
+      background: url(../images/slide2.jpg) no-repeat 50% 100%;
       background-size: cover;
     }
   }
